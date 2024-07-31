@@ -7,9 +7,9 @@ const ball = {
     x: 400,
     y: 300,
     radius: 10,
-    dx: 2,
-    dy: 2,
-    speed: 2
+    dx: 1,
+    dy: 1,
+    speed: 1
 };
 
 const ring = {
