@@ -19,7 +19,13 @@ const ring = {
 };
 
 const audio = document.getElementById('backgroundMusic');
-audio.play();
+const startButton = document.getElementById('startButton');
+
+startButton.addEventListener('click', () => {
+    audio.play();
+    startButton.style.display = 'none'; // Hide the button after starting
+    update();
+});
 
 function drawRing() {
     ctx.strokeStyle = 'red';
@@ -63,5 +69,3 @@ function update() {
     updateBall();
     requestAnimationFrame(update);
 }
-
-update();
